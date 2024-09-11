@@ -1,0 +1,48 @@
+.libre-baskerville-regular {
+  font-family: "Libre Baskerville", system-ui; /* Yazı tipini "Libre Baskerville" ve sistemin varsayılan fontuna ayarla */
+  font-weight: 400; /* Yazı kalınlığını normal olarak ayarla */
+  font-style: normal; /* Yazı stilini normal yap (italik değil) */
+}
+
+body {
+  font-size: 20px; /* Tüm sayfa için temel yazı boyutunu ayarla */
+  background-color: black; /* Sayfanın arka plan rengini siyah yap */
+  color: white; /* Tüm yazıların rengini beyaz yap */
+  margin: 0; /* Sayfa kenar boşluklarını kaldır */
+  padding: 0; /* Sayfa iç boşluklarını kaldır */
+}
+
+h1 {
+  text-transform: uppercase; /* Tüm metni büyük harfle göster */
+  text-align: center; /* Metni ortala */
+  margin-top: 20px; /* Üstte 20 piksel boşluk bırak */
+}
+
+.container {
+  display: flex; /* Konteyneri bir flex kutusu yap, içerikleri yan yana hizala */
+  justify-content: space-around; /* İçerikleri yatayda eşit boşluklarla hizala */
+  align-items: stretch; /* İçerikleri dikeyde eşit yükseklikte hizala */
+  margin: 20px; /* Konteynerin etrafına 20 piksel dış boşluk ekle */
+}
+
+.poster {
+  border: 5px solid white; /* Her poster için beyaz bir kenarlık ekle */
+  text-align: center; /* İçerikleri ortala */
+  padding: 10px; /* İç kenarlara 10 piksel boşluk ekle */
+  width: 30%; /* Her posteri konteynerin genişliğinin %30'u yap */
+  display: flex; /* Her posteri bir flex kutusu yap */
+  flex-direction: column; /* İçerikleri dikeyde hizala */
+  justify-content: space-between; /* İçerikleri dikeyde eşit dağıt */
+  box-sizing: border-box; /* Kenarlık ve padding dahil genişlik hesaplamasını kontrol et */
+}
+
+.poster img {
+  width: 100%; /* Görselin genişliğini posterin genişliği kadar yap */
+  height: auto; /* Görselin yüksekliğini orantılı ayarla */
+  margin-bottom: 10px; /* Görselin altına 10 piksel boşluk ekle */
+}
+
+.poster h2 {
+  margin-top: auto; /* H2 başlığının üst kısmını esnek şekilde hizala, en alta oturtur */
+  margin-bottom: 10px; /* Başlığın altına 10 piksel boşluk ekle */
+}
