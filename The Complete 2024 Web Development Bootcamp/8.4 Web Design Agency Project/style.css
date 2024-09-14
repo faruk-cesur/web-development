@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 50px 50px 0 50px;
   background-color: #faf9f6;
   display: flex;
@@ -19,3 +19,48 @@ footer {
   color: midnightblue;
 }
 
+.color-midnightblue {
+  color: midnightblue;
+}
+
+.cards {
+  display: flex;
+}
+
+.left-card {
+  flex: 1;
+}
+
+.right-card {
+  flex: 1;
+}
+
+.left-card > img {
+  width: 300px;
+  float: left;
+}
+
+.right-card > img {
+  width: 300px;
+  float: left;
+}
+
+/* Mobil Cihazlar */
+@media (max-width: 480px) {
+}
+
+/* Küçük ve Orta Boy Tabletler */
+@media (min-width: 481px) and (max-width: 768px) {
+}
+
+/* Büyük Tabletler ve Küçük Dizüstü Bilgisayarlar */
+@media (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* Büyük Dizüstü Bilgisayarlar ve Masaüstü Bilgisayarlar */
+@media (min-width: 1025px) and (max-width: 1440px) {
+}
+
+/* Çok Büyük Ekranlar (Örneğin, Büyük Masaüstü Bilgisayarlar) */
+@media (min-width: 1441px) {
+}
