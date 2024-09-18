@@ -19,48 +19,111 @@ footer {
   color: midnightblue;
 }
 
-.color-midnightblue {
-  color: midnightblue;
-}
-
-.cards {
-  display: flex;
-}
-
-.left-card {
-  flex: 1;
-}
-
-.right-card {
-  flex: 1;
-}
-
-.left-card > img {
-  width: 300px;
-  float: left;
-}
-
-.right-card > img {
-  width: 300px;
-  float: left;
-}
-
 /* Mobil Cihazlar */
 @media (max-width: 480px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-card {
+    padding-bottom: 10px;
+  }
+
+  .tile-image {
+    width: 250px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  .card-text {
+    font-size: 14px;
+  }
 }
 
 /* Küçük ve Orta Boy Tabletler */
 @media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tile-image {
+    width: 300px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  .card-text {
+    padding-right: 100px;
+  }
 }
 
 /* Büyük Tabletler ve Küçük Dizüstü Bilgisayarlar */
 @media (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-card {
+    padding-bottom: 50px;
+  }
+
+  .tile-image {
+    width: 250px;
+    float: left;
+    padding-right: 30px;
+    padding-top: 20px;
+  }
 }
 
 /* Büyük Dizüstü Bilgisayarlar ve Masaüstü Bilgisayarlar */
 @media (min-width: 1025px) and (max-width: 1440px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right-card {
+    padding-left: 40px;
+  }
+
+  .tile-image {
+    width: 300px;
+    padding-right: 50px;
+    padding-top: 10px;
+  }
 }
 
 /* Çok Büyük Ekranlar (Örneğin, Büyük Masaüstü Bilgisayarlar) */
 @media (min-width: 1441px) {
+  .cards {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .right-card {
+    padding-left: 140px;
+  }
+
+  .tile-image {
+    width: 300px;
+    height: 200px;
+    float: left;
+    padding-right: 50px;
+    padding-top: 10px;
+  }
 }
